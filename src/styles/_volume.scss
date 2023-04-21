@@ -1,0 +1,38 @@
+.volume-control {
+    position: relative;
+}
+.volume-slider {
+    display: none;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: -95px;
+    background: white;
+    padding: 1rem;
+    border-radius: 1em;
+    border: 2px solid black;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    width: 200px;
+    input {
+        z-index: 2;
+    }
+}
+.arrow {
+    position: absolute;
+    top: -16px;
+    left: 45%;
+    transform: rotate(45deg);
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-right: none;
+    border-bottom: none;
+    background-color: white;
+    // box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    // z-index: -2;
+}
+.active-volume-slider {
+    display: block;
+}
+.volume-icon {
+    cursor: pointer;
+}

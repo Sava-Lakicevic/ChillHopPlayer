@@ -1,0 +1,24 @@
+nav {
+    width: Min(40rem, calc(100% - 5rem));
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    button {
+        z-index: 2;
+        cursor: pointer;
+        font-size: 1.125rem;
+        background: white;
+        padding: 0.3rem 1rem;
+        border: 1px solid rgb(65, 65, 65);
+        border-radius: 1rem;
+        box-shadow: 0 1px 5px rgba(128, 128, 128, 0.5);
+        transition: all 0.3s ease;
+        &:hover {
+            box-shadow: none;
+            background-color: rgb(65, 65, 65);
+            color: white;
+        }
+    }
+}
